@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Etch-a-Sketch</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <header class="title">
+                <h1 class="heading">Etch-a-Sketch</h1>
+            </header>
+            <main class="container">
+                <div class="controls">
+                <label for="color">Choose Color: <input id="input-color" type="color" name="color" value="#0a0a0a" /></label>
+                <button class="rainbow">Party</button>
+                <button class="eraserBtn">Eraser</button>
+                <button class="clearBtn">Clear</button>
+                </div>
+                <div class="grid"></div>
+                <div class="sizeInput">
+                    <p class="boardTitle">Board Size</p>
+                    <input type="range" min="2" max="100" value="16" id="slider" class="slider">
+                    <p class="boardTitle">Small to Large</p>
+                    
+                </div>
+            </main>
+
+
+
+
+
+
+
+
+            <script src="script.js"></script>
+        </body>
+</html>

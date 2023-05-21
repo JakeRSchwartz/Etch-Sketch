@@ -1,0 +1,66 @@
+.grid {
+    width:600px;
+    height:600px;
+    display:grid;
+
+}
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family: 'Silkscreen', cursive;
+    background-color: darkblue;
+    color: yellow;
+
+}
+.controls {
+    display:flex;
+    justify-content: space-evenly;  
+}
+.sizeInput {
+display:flex;
+flex-direction: column;
+}
+.boardTitle{
+    text-align: center;
+    font-size: 25px;
+}
+.title{
+    font-size: 30px;
+    text-shadow: 0 0 8px yellow;
+}
+.grid > * {
+    border: .5px solid black;
+}
+button{
+    border: 3px solid yellow;
+    background:none;
+    font-family: 'Silkscreen', cursive;
+    color:yellow;
+    height:40px;
+    width:80px;
+    margin-bottom:15px
+
+}
+button:hover{
+    cursor:pointer;
+    outline:none;
+    border-color:yellow;
+    box-shadow:0 0 20px yellow;
+}
+button:active {
+    transform:scale(1.2);
+
+}
+input:hover {
+    cursor: pointer;
+    outline: none;
+    border:yellow;
+    box-shadow: 0 0 20px yellow;
+    background: none;
+}
+input:active {
+    transform: scale(1.2);
+}
