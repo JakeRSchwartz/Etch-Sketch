@@ -5,7 +5,7 @@ const userColor = document.querySelector('#input-color');
 const eraser = document.querySelector('.eraserBtn') ;
 const rainbow = document.querySelector('.rainbow');
 const clear = document.querySelector('.clearBtn');
-var mouseisDown = false;
+var mouseIsDown = false;
 function createGrid(size){
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
@@ -15,6 +15,12 @@ function createGrid(size){
         gridBox.style.backgroundColor = 'white';
         grid.insertAdjacentElement('beforeend', gridBox);
 }
+window.addEventListener('mousedown', () => {
+    mouseIsDown = true;
+});
+window.addEventListener('mouseup', () => {
+    mouseIsDown = false;
+});
 var gridBox = grid.querySelectorAll('div');
 gridBox.forEach(grid => grid.addEventListener('mouseover', colorGrid))
 }
@@ -38,6 +44,7 @@ function clearAll(){
     gridboxes.forEach(box => box.style.backgroundColor = 'white');
 }
 function colorGrid(){
+    if(mouseIsDown){
     switch(color) {
         case 'eraser':
             this.style.backgroundColor = 'white';
@@ -49,6 +56,7 @@ function colorGrid(){
             this.style.backgroundColor = color;
             break;
     }   
+}
 }
 
 gridSize(pixel.value)
