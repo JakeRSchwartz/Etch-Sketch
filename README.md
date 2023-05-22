@@ -7,7 +7,7 @@
 
 **Play the game here:** [here](https://jakerschwartz.github.io/Etch-Sketch/)
 
-###Summary
-*Furthered skills in **JavaScript**, **CSS**, and **HTML**
+### Summary
+* Furthered skills in **JavaScript**, **CSS**, and **HTML**
 * **GIT** skills got better.
 * Created a simple functioning etch-a-sketch game. 
