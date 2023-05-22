@@ -4,6 +4,7 @@
 **Beginning Learning Curves**
 * styling in **JavaScript**
 * **DOM** manipulation
+* **CSS** and **HTML** 
 
 **Play the game here:** [here](https://jakerschwartz.github.io/Etch-Sketch/)
 
