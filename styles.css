@@ -64,3 +64,8 @@ input:hover {
 input:active {
     transform: scale(1.2);
 }
+footer{
+    text-align:center;
+    color: yellow;
+    font-size: 10px;
+}
